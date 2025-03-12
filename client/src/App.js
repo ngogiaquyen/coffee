@@ -1,13 +1,9 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Route, Routes, useParams } from 'react-router-dom';
-import ModalOverLay from './component/ModalOverLay';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import EmptyLayout from './Layouts/EmptyLayout';
 import { publicRouters } from './routes/routes';
-import { useLoading } from './component/Context/LoadingProvider';
-import Toast from './component/Toast';
-import Loader from './component/Loader';
 
 function App() {
   return (

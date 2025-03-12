@@ -1,9 +1,13 @@
+import routes from "~/configs";
+import HomeLayout from "~/Layouts/HomeLayout";
+import HomePage from "~/page/HomePage";
+
 export const publicRouters = [
-  // {
-  //   component: Home,
-  //   path: routes.home,
-  //   layout: HomeLayout,
-  // }
+  {
+    component: HomePage,
+    path: routes.home,
+    layout: HomeLayout,
+  }
 ];
 
 export const privateRouters = [];
