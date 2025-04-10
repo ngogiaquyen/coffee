@@ -1,0 +1,88 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 90px;
+  padding: 90px 0px 90px 0px;
+  z-index: 9;
+  margin: 0 auto;
+  align-self: center;
+
+  &.fadeout {
+    .content {
+      animation: fadeInRight 0.7s linear;
+    }
+
+    .image {
+      animation: fadeInLeft 0.7s linear;
+    }
+  }
+}
+
+.long {
+  position: absolute;
+  top: 300px;
+  left: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  --translateY: 0px;
+  transform: translateY(var(--translateY));
+  transition: transform 0.2s linear;
+  z-index: 3;
+
+
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 424px;
+  // opacity: 0;
+}
+
+.text {
+  text-align: left;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.image {
+  padding-left: 80px;
+  // opacity: 0;
+  z-index: 2;
+}
+
+.img {
+  width: 450px;
+}
+
+.icon {
+  margin-left: 8px;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

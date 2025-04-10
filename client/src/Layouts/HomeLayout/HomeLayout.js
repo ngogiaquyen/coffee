@@ -1,15 +1,16 @@
 import classNames from 'classnames/bind';
 import styles from './HomeLayout.module.scss';
-import { useContext } from 'react';
+import Bars from '../components/Bars';
+import Navbar from '../components/Navbar';
 
 const cx = classNames.bind(styles);
 
 function HomeLayout({ children }) {
   return (
     <div className={cx('wrapper')}>
-      <div className={cx('container')}>
-        {children}
-      </div>
+      <Navbar />
+      <div className={cx('container')}>{children}</div>
+      <Bars />
     </div>
   );
 }

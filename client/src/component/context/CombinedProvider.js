@@ -1,5 +1,12 @@
-function CombinedProvider({children}) {
-    return ( children );
+import { NavBarProvider } from './NavBarProvider';
+import { WheelProvider } from './WheelProvider';
+
+function CombinedProvider({ children }) {
+  return (
+    <NavBarProvider>
+      <WheelProvider>{children}</WheelProvider>
+    </NavBarProvider>
+  );
 }
 
 export default CombinedProvider;

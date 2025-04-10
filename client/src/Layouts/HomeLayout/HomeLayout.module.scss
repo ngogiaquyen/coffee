@@ -1,5 +1,5 @@
-.container {
-  padding: 10px 0;
-//   background-color: var(--content-bg-color);
-  gap: 10px;
+.container{
+    display: flex;
+    flex-direction: column;
+    overflow-y: overlay;
 }
